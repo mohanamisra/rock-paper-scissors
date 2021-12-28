@@ -1,0 +1,49 @@
+body {
+    background: url('./images/backgroundimage.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boy img {
+    height: 255px;
+    position: fixed;
+    left: 450px;
+    top: 335px; 
+}
+
+.robot img {
+    height: 170px;
+    position: fixed;
+    left: 850px;
+    top: 400px;
+}
+
+.left-buttons {
+    position: fixed;
+    left: 145px;
+    top: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.right-buttons {
+    position: fixed;
+    right: 145px;
+    top: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rock img,
+.paper img,
+.scissors img {
+    opacity: 85%;
+    height: 100px;
+}
