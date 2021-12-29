@@ -9,11 +9,49 @@ body {
     overflow: hidden;
 }
 
+.header img {
+    position: fixed;
+    top: 55px;;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 1000px;
+}
+
+.banner img {
+    position: fixed;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 600px;
+}
+
+.text {
+    font-family: 'Gloria Hallelujah';
+    letter-spacing: 5px;
+    color: #fff9e4;
+    text-shadow: 1px 1px 1px black;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text.header {
+    font-size: 40px;
+    top: 55px;
+}
+
+.text.info {
+    font-size: 30px;
+    top: 170px;
+}
+
 .boy img {
-    height: 270px;
+    height: 230px;
     position: fixed;
     left: 450px;
-    top: 303px; 
+    top: 340px; 
 }
 
 .attack-pose {
@@ -21,16 +59,16 @@ body {
 }
 
 .robot img {
-    height: 350px;
+    height: 310px;
     position: fixed;
     left: 750px;
-    top: 300px;
+    top: 330px;
 }
 
 .left-buttons {
     position: fixed;
-    left: 145px;
-    top: 115px;
+    left: 230px;
+    top: 140px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -38,8 +76,8 @@ body {
 
 .right-buttons {
     position: fixed;
-    right: 145px;
-    top: 115px;
+    right: 230px;
+    top: 140px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -49,21 +87,21 @@ body {
 .paper img,
 .scissors img {
     opacity: 80%;
-    height: 100px;
+    height: 80px;
 }
 
 .left-buttons img:hover {
     transform: scale(1.1);
     opacity: 100%;
     border-radius: 100%;
-    box-shadow: 0px 0px 100px 20px #2a54eb;
+    box-shadow: 0px 0px 50px 0px #2a54eb;
 }
 
 .clicked img{
     transform:scale(1.1);
     opacity: 100%;
     border-radius: 100%;
-    box-shadow: 0px 0px 100px 20px #2a54eb;
+    box-shadow: 0px 0px 50px 0px #2a54eb;
 }
 
 .make-visible {

@@ -3,6 +3,8 @@ let robot = document.getElementById("robot");
 let boyAttack = document.getElementById("boy-attack");
 let robotAttack = document.getElementById("robot-attack");
 
+let info = document.getElementById("info");
+
 let rock = document.getElementById("rockbutton");
 let paper = document.getElementById("paperbutton");
 let scissors = document.getElementById("scissorsbutton");
@@ -31,16 +33,16 @@ function gamePlay(playerChoice) {
     
     if(playerChoice == computerChoice) {
         console.log("Computer chose = " + computerChoice);
-        console.log("it's a tie");
+        info.textContent = "Meh...";
     }
     else if((playerChoice == "rock" && computerChoice == "scissors") || (playerChoice == "paper" && computerChoice == "rock") || (playerChoice == "scissors" && computerChoice == "paper")) {
         console.log("Computer chose = " + computerChoice);
-        console.log("Player wins");
+        info.textContent = "Yay!";
         playerScore++;
     }
     else if((playerChoice == "rock" && computerChoice == "paper") || (playerChoice == "paper" && computerChoice == "scissors") || (playerChoice == "scissors" && computerChoice == "rock")) {
         console.log("Computer chose = " + computerChoice);
-        console.log("Player loses");
+        info.textContent = "Uh oh!";
         computerScore++;
     }
 }
@@ -70,11 +72,11 @@ function gameFlow(playerChoice) {
     }
     else{
         if(computerScore<playerScore)
-        alert("PLAYER WON");
+        info.textContent = "YOU WON THE GAME!"
         else if(playerScore<computerScore)
-        alert("COMPUTER WON");
+        info.textContent = "You lost the game...";
         else if(playerScore == computerScore)
-        alert("IT'S A TIE");
+        info.textContent = "It's a tie!";
     }
 }
 
