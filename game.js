@@ -1,8 +1,7 @@
 let boy = document.getElementById("boy");
 let robot = document.getElementById("robot");
-let images = document.body.getElementsByTagName("img");
-let boyImage = images[3];
-let robotImage = images[4];
+let boyAttack = document.getElementById("boy-attack");
+let robotAttack = document.getElementById("robot-attack");
 
 let rock = document.getElementById("rockbutton");
 let paper = document.getElementById("paperbutton");
@@ -85,15 +84,14 @@ function clicked(clickedClass) {
 }
 
 function attackPose() {
-  let boyAttack = document.createElement('img');
-  boyAttack.src = './images/boyattack.png';
-  let robotAttack = document.createElement('img');
-  robotAttack.src = './images/robotattack.png';
-  boy.replaceChild(boyAttack, boyImage);
-  robot.replaceChild(robotAttack, robotImage);
-
-  setTimeout(() => {
-      boy.replaceChild(boyImage, boyAttack);
-      robot.replaceChild(robotImage, robotAttack);
-  }, 5000);
+    boy.classList.add("make-invisible");
+    boyAttack.classList.add("make-visible");
+    robot.classList.add("make-invisible");
+    robotAttack.classList.add("make-visible");
+    setTimeout(() => {
+        boy.classList.remove("make-invisible");
+        boyAttack.classList.remove("make-visible");
+        robot.classList.remove("make-invisible");
+        robotAttack.classList.remove("make-visible");
+    }, 5000);
 }

@@ -13,7 +13,11 @@ body {
     height: 270px;
     position: fixed;
     left: 450px;
-    top: 320px; 
+    top: 303px; 
+}
+
+.attack-pose {
+    opacity: 0%;
 }
 
 .robot img {
@@ -60,4 +64,12 @@ body {
     opacity: 100%;
     border-radius: 100%;
     box-shadow: 0px 0px 100px 20px #2a54eb;
+}
+
+.make-visible {
+    opacity: 100%;
+}
+
+.make-invisible {
+    opacity: 0%;
 }
