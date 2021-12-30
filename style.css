@@ -36,8 +36,8 @@ body {
     position: fixed;
 }
 
-.text.header {
-    font-size: 40rem;
+#result {
+    font-size: 60rem;
     top: 55rem;
     left: 50%;
     transform: translate(-50%, -50%);
