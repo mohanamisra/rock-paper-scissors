@@ -167,3 +167,9 @@ li:hover {
 .make-invisible {
     opacity: 0%;
 }
+
+@media(width: 1800px) {
+    html {
+        font-size: 3.25%;
+    }
+}
