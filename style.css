@@ -1,56 +1,111 @@
+html {
+    font-size: 6.25%;
+}
+
 body {
-    background: url('./images/backgroundimage.png');
+    background-image: url('./images/backgroundimage.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 }
 
 .header img {
     position: fixed;
-    top: 55px;;
+    top: 55rem;;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100px;
-    width: 1000px;
+    height: 100rem;
+    width: 1000rem;
 }
 
 .banner img {
     position: fixed;
-    top: 170px;
+    top: 170rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 70px;
-    width: 600px;
+    height: 70rem;
+    width: 600rem;
 }
 
 .text {
     font-family: 'Gloria Hallelujah';
-    letter-spacing: 5px;
+    letter-spacing: 5rem;
     color: #fff9e4;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1rem 1rem 1rem black;
     position: fixed;
+}
+
+.text.header {
+    font-size: 40rem;
+    top: 55rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.text.header {
-    font-size: 40px;
-    top: 55px;
+.text.info {
+    font-size: 30rem;
+    top: 170rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.text.info {
-    font-size: 30px;
-    top: 170px;
+.footer {
+    font-size: 30rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 20rem;
+    width: 100%;
+}
+
+.your-score {
+     margin-right: 250rem;
+}
+
+.computer-score {
+    margin-right: 210rem;
+}
+
+.attributes {
+    color: #fff9e4;
+    margin-right: 20rem;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+.credits {
+    font-size: 30rem;
+    color: #fff9e4;
+    line-height: 35rem;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff9e4;
+}
+
+li:hover {
+    opacity: 100%;
+    text-decoration: underline;
+    background-color: #4C2291;
+    transform: scale(1.1);
 }
 
 .boy img {
-    height: 230px;
+    height: 230rem;
     position: fixed;
-    left: 450px;
+    left: 450rem;
     top: 340px; 
 }
 
@@ -59,52 +114,53 @@ body {
 }
 
 .robot img {
-    height: 310px;
+    height: 310rem;
     position: fixed;
-    left: 750px;
+    left: 750rem;
     top: 330px;
 }
 
 .left-buttons {
     position: fixed;
-    left: 230px;
-    top: 140px;
+    left: 230rem;
+    top: 140rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 40rem;
 }
 
 .right-buttons {
     position: fixed;
-    right: 230px;
-    top: 140px;
+    right: 230rem;
+    top: 140rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 40rem;
 }
 
 .rock img,
 .paper img,
 .scissors img {
     opacity: 80%;
-    height: 80px;
+    height: 80rem;
 }
 
 .left-buttons img:hover {
     transform: scale(1.1);
     opacity: 100%;
     border-radius: 100%;
-    box-shadow: 0px 0px 50px 0px #2a54eb;
+    box-shadow: 0rem 0rem 50rem 0rem #2a54eb;
 }
 
 .clicked img{
     transform:scale(1.1);
     opacity: 100%;
     border-radius: 100%;
-    box-shadow: 0px 0px 50px 0px #2a54eb;
+    box-shadow: 0rem 0rem 50rem 0rem #2a54eb;
 }
 
-.make-visible {
+.make-visible,
+.attributes:hover {
     opacity: 100%;
 }
 
