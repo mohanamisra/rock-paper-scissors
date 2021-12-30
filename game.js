@@ -93,20 +93,34 @@ function computerGenerate() {
 }
 
 function gameFlow(playerChoice) {
-    if(playerScore == 4 || computerScore == 4) {
+    gamePlay(playerChoice);
+    if((playerScore == 5 && computerScore < 5) || (computerScore == 5 && playerScore < 5)) {
         if(computerScore<playerScore) {
-        yourScore.textContent = "You : 5";
-        result.textContent = "YOU WON THE GAME!";
+        result.textContent = "YAY! YOU WON!";
+        result.style.fontWeight = "bold";
+        info.textContent = "Wanna rematch?";
+        yourScore.textContent = "You : 0";
+        roboScore.textContent = "Robo : 0";
+        playerScore = 0;
+        computerScore = 0;
+        setTimeout(() => {
+            result.textContent = "Rock, Paper, Scissors";
+        }, 5000);
         }
         else if(playerScore<computerScore) {
-        roboScore.textContent = "Robo : 5";
-        result.textContent = "You lost the game...";
-        }
-        //gameOver();
+        result.textContent = "OH NO! YOU LOST!";
+        result.style.fontWeight = "bold";
+        info.textContent = "Wanna rematch?";
+        playerScore = 0;
+        computerScore = 0;
+        yourScore.textContent = "You : 0";
+        roboScore.textContent = "Robo : 0";
+        
+        setTimeout(() => {
+            result.textContent = "Rock, Paper, Scissors";
+        }, 5000);
     }
-    else{
-        gamePlay(playerChoice);
-    }
+}
 }
 
 function clicked(clickedClass) {
