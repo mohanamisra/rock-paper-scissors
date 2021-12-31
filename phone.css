@@ -231,22 +231,22 @@ li:hover {
         height: 170rem;
         position: fixed;
         left: 60rem;
-        top: 445rem; 
+        top: 470rem; 
     }
     .robot img {
         height: 200rem;
         position: fixed;
         left: 270rem;
-        top: 460rem;
+        top: 480rem;
     }
     .left-buttons {
         left: -40rem;
-        top: 300rem;
+        top: 320rem;
     }
     
     .right-buttons {
         right: -40rem;
-        top: 300rem;
+        top: 320rem;
     }
 }
 
@@ -256,7 +256,7 @@ li:hover {
     }
     .header img {
         position: fixed;
-        top: 350rem;
+        top: 320rem;
         height: 40rem;
         width: 500rem;
     }
@@ -268,7 +268,7 @@ li:hover {
         width: 350rem;
     }
     #result {
-        top: 350rem;
+        top: 320rem;
     }
     #info {
         top: 400rem;
@@ -287,21 +287,21 @@ li:hover {
         height: 170rem;
         position: fixed;
         left: 60rem;
-        top: 620rem; 
+        top: 590rem; 
     }
     .robot img {
         height: 200rem;
         position: fixed;
         left: 270rem;
-        top: 630rem;
+        top: 600rem;
     }
     .left-buttons {
         left: -40rem;
-        top: 410rem;
+        top: 400rem;
     }
     
     .right-buttons {
         right: -40rem;
-        top: 410rem;
+        top: 400rem;
     }
 }
