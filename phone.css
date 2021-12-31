@@ -1,0 +1,390 @@
+html {
+    font-size: 6.25%;
+    transform:rotate(-90deg);
+    position: fixed;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./images/backgroundimagemobi.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header img {
+    position: fixed;
+    top: 120rem;;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50rem;
+    width: 500rem;
+}
+
+.banner img {
+    position: fixed;
+    top: 190rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50rem;
+    width: 350rem;
+}
+
+.text {
+    font-family: 'Gloria Hallelujah';
+    letter-spacing: 5rem;
+    color: #fff9e4;
+    text-shadow: 1rem 1rem 1rem black;
+    position: fixed;
+}
+
+#result {
+    font-size: 30rem;
+    top: 120rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text.info {
+    font-size: 10rem;
+    top: 190rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.your-score {
+    position: fixed;
+    bottom: 130rem;
+    font-size: 15rem;
+    left: 20rem;
+}
+
+.computer-score {
+    position: fixed;
+    bottom: 130rem;
+    font-size: 15rem;
+    left: 330rem;
+    white-space: nowrap;
+}
+
+.attributes {
+    position: fixed;
+    left: 430rem;
+    font-size: 15rem;
+    color: #fff9e4; 
+    opacity: 50%;
+    position: fixed;
+    top: 520rem;
+    text-decoration: none;
+}
+
+.credits {
+    font-size: 30rem;
+    color: #fff9e4;
+    line-height: 35rem;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff9e4;
+}
+
+li:hover {
+    opacity: 100%;
+    text-decoration: underline;
+    background-color: #4C2291;
+    transform: scale(1.1);
+}
+
+.boy img {
+    height: 130rem;
+    position: fixed;
+    left: 60rem;
+    top: 350rem; 
+}
+
+.attack-pose {
+    opacity: 0%;
+}
+
+.robot img {
+    height: 180rem;
+    position: fixed;
+    left: 270rem;
+    top: 340rem;
+}
+
+.left-buttons {
+    position: fixed;
+    left: 0rem;
+    top: 200rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+}
+
+.right-buttons {
+    position: fixed;
+    right: 0rem;
+    top: 200rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+}
+
+.rock img,
+.paper img,
+.scissors img {
+    opacity: 80%;
+    height: 40rem;
+}
+
+.left-buttons img:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+    border-radius: 100%;
+    box-shadow: 0rem 0rem 50rem 0rem #2a54eb;
+}
+
+.clicked img{
+    transform:scale(1.1);
+    opacity: 100%;
+    border-radius: 100%;
+    box-shadow: 0rem 0rem 50rem 0rem #2a54eb;
+}
+
+.make-visible,
+.attributes:hover {
+    opacity: 100%;
+}
+
+.make-invisible {
+    opacity: 0%;
+}
+
+/*Adaptive CSS for phones*/
+@media (min-width: 440px) and (max-width: 480px) {
+    html {
+        font-size: 6.00%;
+    }
+    .attributes {
+        top: 520rem;
+        left: 420rem;
+    }
+    .your-score {
+        bottom: 150rem;
+    }
+    .computer-score {
+        bottom: 150rem;
+    }
+    .boy img {
+        height: 145rem;
+    }
+    .robot img {
+        height: 190rem;
+        top: 345rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 440px) {
+    html {
+        font-size: 5.75%;
+    }
+    .banner img {
+        top: 210rem;
+        height: 40rem;
+    }
+
+    #info {
+        position: fixed;
+        top: 210rem;
+    }
+
+    #result {
+        font-size: 28rem;
+        position: fixed;
+        top: 160rem;
+    }
+
+    .header img {
+        top: 160rem;
+        height: 40rem;
+    }
+    .attributes {
+        top: 525rem;
+        left: 420rem;
+    }
+    .your-score {
+        bottom: 180rem;
+    }
+    .computer-score {
+        bottom: 180rem;
+    }
+    .boy img {
+        left: 40rem;
+        top: 360rem;
+        height: 145rem;
+    }
+    .robot img {
+        height: 185rem;
+        top: 355rem;
+    }
+    .left-buttons {
+        left: -25rem;
+        top: 210rem;
+    }
+    
+    .right-buttons {
+        right: -25rem;
+        top: 210rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 400px) {
+    html {
+        font-size: 5.25%;
+    }
+    .banner img {
+        top: 243rem;
+        height: 37rem;
+    }
+
+    #info {
+        position: fixed;
+        top: 243rem;
+    }
+
+    #result {
+        font-size: 25rem;
+        position: fixed;
+        top: 195rem;
+    }
+
+    .header img {
+        top: 195rem;
+        height: 40rem;
+    }
+    .left-buttons {
+        left: -35rem;
+        top: 250rem;
+    }
+    
+    .right-buttons {
+        right: -35rem;
+        top: 250rem;
+    }
+    .boy img {
+        left: 40rem;
+        top: 392rem;
+        height: 145rem;
+    }
+    .robot img {
+        height: 185rem;
+        top: 390rem;
+        left: 240rem;
+    }
+    .attributes {
+        top: 565rem;
+        left: 420rem;
+    }
+    .your-score {
+        bottom: 200rem;
+    }
+    .computer-score {
+        bottom: 200rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    html {
+        font-size: 5.25%;
+    }
+    .banner img {
+        top: 265rem;
+        height: 30rem;
+    }
+
+    #info {
+        position: fixed;
+        top: 265rem;
+    }
+
+    #result {
+        font-size: 25rem;
+        position: fixed;
+        top: 220rem;
+    }
+
+    .header img {
+        top: 220rem;
+        height: 30rem;
+    }
+    .left-buttons {
+        left: -90rem;
+        top: 250rem;
+    }
+    
+    .right-buttons {
+        right: -90rem;
+        top: 250rem;
+    }
+    .boy img {
+        left: 25rem;
+        top: 380rem;
+        height: 145rem;
+    }
+    .robot img {
+        height: 185rem;
+        top: 375rem;
+        left: 210rem;
+    }
+    .attributes {
+        top: 542rem;
+        left: 425rem;
+        font-size: 15rem;
+    }
+    .your-score {
+        bottom: 230rem;
+    }
+    .computer-score {
+        bottom: 230rem;
+    }
+}
+
+@media (width: 425px) and (height: 768px) {
+    html {
+        font-size: 8.25%;
+    }
+}

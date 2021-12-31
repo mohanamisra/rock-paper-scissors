@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 490px)' href="phone.css"/>
     <title>Rock Paper Scissors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,11 @@
     <script src = "game.js" defer>
     </script>
 </head>
-<body>
+<body id = "container">
+    <div class = "container">
+        <!-- <div class = "background">
+        <img src = './images/backgroundimage.png' alt = "">
+        </div> -->
         <div class = "header">
             <img src = './images/smudge.png' alt ="">
             <div class = "text header" id = "result">
@@ -22,7 +27,7 @@
     <div class = "banner">
         <img src = './images/smudge.png' alt = "">
         <div class = "text info" id = "info">
-            <h2> &#x2190 Click to begin playing...</h2>
+            <h2>   Click to begin playing...</h2>
         </div>
     </div>
     <div class = "left-buttons">
@@ -69,5 +74,6 @@
         <div class = "computer-score" id = "computer-score">Robo : 0</div>
         <a href = "attributes.html" class = "attributes">Attributes</a>
     </div>
+</div>
 </body>
 </html>

@@ -145,3 +145,8 @@ function attackPose() {
 //     playerScore = 0;
 //     computerScore = 0;
 // }
+
+console.log(window.outerHeight);
+console.log(window.outerWidth);
+console.log(window.innerHeight);
+console.log(window.innerWidth);
