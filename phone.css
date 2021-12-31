@@ -287,21 +287,21 @@ li:hover {
         height: 170rem;
         position: fixed;
         left: 60rem;
-        top: 590rem; 
+        top: 620rem; 
     }
     .robot img {
         height: 200rem;
         position: fixed;
         left: 270rem;
-        top: 600rem;
+        top: 630rem;
     }
     .left-buttons {
         left: -40rem;
-        top: 400rem;
+        top: 410rem;
     }
     
     .right-buttons {
         right: -40rem;
-        top: 400rem;
+        top: 410rem;
     }
 }
