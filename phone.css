@@ -383,8 +383,58 @@ li:hover {
     }
 }
 
-@media (width: 425px) and (height: 768px) {
+@media (width: 412px) and (height: 756px) {
     html {
-        font-size: 8.25%;
+        font-size: 5.80%;
+    }
+    .banner img {
+        top: 265rem;
+        height: 30rem;
+    }
+
+    #info {
+        position: fixed;
+        top: 265rem;
+    }
+
+    #result {
+        font-size: 25rem;
+        position: fixed;
+        top: 220rem;
+    }
+
+    .header img {
+        top: 220rem;
+        height: 30rem;
+    }
+    .left-buttons {
+        left: -90rem;
+        top: 280rem;
+    }
+    
+    .right-buttons {
+        right: -90rem;
+        top: 280rem;
+    }
+    .boy img {
+        left: 25rem;
+        top: 420rem;
+        height: 145rem;
+    }
+    .robot img {
+        height: 185rem;
+        top: 415rem;
+        left: 210rem;
+    }
+    .attributes {
+        top: 592rem;
+        left: 425rem;
+        font-size: 15rem;
+    }
+    .your-score {
+        bottom: 230rem;
+    }
+    .computer-score {
+        bottom: 230rem;
     }
 }
