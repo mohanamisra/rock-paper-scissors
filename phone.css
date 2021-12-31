@@ -54,10 +54,15 @@ body {
 }
 
 #result {
+    position: fixed;
     font-size: 30rem;
     top: 120rem;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#info {
+    position: fixed;
 }
 
 .text.info {
@@ -90,14 +95,7 @@ body {
 }
 
 .attributes {
-    position: fixed;
-    left: 430rem;
-    font-size: 15rem;
-    color: #fff9e4; 
-    opacity: 50%;
-    position: fixed;
-    top: 520rem;
-    text-decoration: none;
+    opacity: 0%;
 }
 
 .credits {
@@ -194,247 +192,116 @@ li:hover {
     opacity: 0%;
 }
 
-/*Adaptive CSS for phones*/
-@media (min-width: 440px) and (max-width: 480px) {
-    html {
-        font-size: 6.00%;
-    }
-    .attributes {
-        top: 520rem;
-        left: 420rem;
-    }
-    .your-score {
-        bottom: 150rem;
-    }
-    .computer-score {
-        bottom: 150rem;
-    }
-    .boy img {
-        height: 145rem;
-    }
-    .robot img {
-        height: 190rem;
-        top: 345rem;
-    }
-}
+/*Adaptive Designs for phones */
 
-@media (min-width: 400px) and (max-width: 440px) {
-    html {
-        font-size: 5.75%;
-    }
-    .banner img {
-        top: 210rem;
-        height: 40rem;
-    }
-
-    #info {
-        position: fixed;
-        top: 210rem;
-    }
-
-    #result {
-        font-size: 28rem;
-        position: fixed;
-        top: 160rem;
-    }
-
-    .header img {
-        top: 160rem;
-        height: 40rem;
-    }
-    .attributes {
-        top: 525rem;
-        left: 420rem;
-    }
-    .your-score {
-        bottom: 180rem;
-    }
-    .computer-score {
-        bottom: 180rem;
-    }
-    .boy img {
-        left: 40rem;
-        top: 360rem;
-        height: 145rem;
-    }
-    .robot img {
-        height: 185rem;
-        top: 355rem;
-    }
-    .left-buttons {
-        left: -25rem;
-        top: 210rem;
-    }
-    
-    .right-buttons {
-        right: -25rem;
-        top: 210rem;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 400px) {
+@media (min-width: 370px) and (max-width: 430px) {
     html {
         font-size: 5.25%;
     }
-    .banner img {
-        top: 243rem;
-        height: 37rem;
-    }
-
-    #info {
-        position: fixed;
-        top: 243rem;
-    }
-
-    #result {
-        font-size: 25rem;
-        position: fixed;
-        top: 195rem;
-    }
-
     .header img {
-        top: 195rem;
+        position: fixed;
+        top: 260rem;
         height: 40rem;
+        width: 500rem;
+    }
+    
+    .banner img {
+        position: fixed;
+        top: 320rem;
+        height: 40rem;
+        width: 350rem;
+    }
+    #result {
+        top: 260rem;
+    }
+    #info {
+        top: 320rem;
+    }
+    .your-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 20rem;
+    } 
+    .computer-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 330rem;
+    }
+    .boy img {
+        height: 170rem;
+        position: fixed;
+        left: 60rem;
+        top: 445rem; 
+    }
+    .robot img {
+        height: 200rem;
+        position: fixed;
+        left: 270rem;
+        top: 460rem;
     }
     .left-buttons {
-        left: -35rem;
-        top: 250rem;
+        left: -40rem;
+        top: 300rem;
     }
     
     .right-buttons {
-        right: -35rem;
-        top: 250rem;
-    }
-    .boy img {
-        left: 40rem;
-        top: 392rem;
-        height: 145rem;
-    }
-    .robot img {
-        height: 185rem;
-        top: 390rem;
-        left: 240rem;
-    }
-    .attributes {
-        top: 565rem;
-        left: 420rem;
-    }
-    .your-score {
-        bottom: 200rem;
-    }
-    .computer-score {
-        bottom: 200rem;
+        right: -40rem;
+        top: 300rem;
     }
 }
 
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 370px) {
     html {
-        font-size: 5.25%;
+        font-size: 4.25%;
     }
-    .banner img {
-        top: 265rem;
-        height: 30rem;
-    }
-
-    #info {
-        position: fixed;
-        top: 265rem;
-    }
-
-    #result {
-        font-size: 25rem;
-        position: fixed;
-        top: 220rem;
-    }
-
     .header img {
-        top: 220rem;
-        height: 30rem;
+        position: fixed;
+        top: 350rem;
+        height: 40rem;
+        width: 500rem;
+    }
+    
+    .banner img {
+        position: fixed;
+        top: 400rem;
+        height: 40rem;
+        width: 350rem;
+    }
+    #result {
+        top: 350rem;
+    }
+    #info {
+        top: 400rem;
+    }
+    .your-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 20rem;
+    } 
+    .computer-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 330rem;
+    }
+    .boy img {
+        height: 170rem;
+        position: fixed;
+        left: 60rem;
+        top: 590rem; 
+    }
+    .robot img {
+        height: 200rem;
+        position: fixed;
+        left: 270rem;
+        top: 600rem;
     }
     .left-buttons {
-        left: -90rem;
-        top: 250rem;
+        left: -40rem;
+        top: 400rem;
     }
     
     .right-buttons {
-        right: -90rem;
-        top: 250rem;
-    }
-    .boy img {
-        left: 25rem;
-        top: 380rem;
-        height: 145rem;
-    }
-    .robot img {
-        height: 185rem;
-        top: 375rem;
-        left: 210rem;
-    }
-    .attributes {
-        top: 542rem;
-        left: 425rem;
-        font-size: 15rem;
-    }
-    .your-score {
-        bottom: 230rem;
-    }
-    .computer-score {
-        bottom: 230rem;
-    }
-}
-
-@media (width: 412px) and (height: 756px) {
-    html {
-        font-size: 5.80%;
-    }
-    .banner img {
-        top: 265rem;
-        height: 30rem;
-    }
-
-    #info {
-        position: fixed;
-        top: 265rem;
-    }
-
-    #result {
-        font-size: 25rem;
-        position: fixed;
-        top: 220rem;
-    }
-
-    .header img {
-        top: 220rem;
-        height: 30rem;
-    }
-    .left-buttons {
-        left: -90rem;
-        top: 280rem;
-    }
-    
-    .right-buttons {
-        right: -90rem;
-        top: 280rem;
-    }
-    .boy img {
-        left: 25rem;
-        top: 420rem;
-        height: 145rem;
-    }
-    .robot img {
-        height: 185rem;
-        top: 415rem;
-        left: 210rem;
-    }
-    .attributes {
-        top: 592rem;
-        left: 425rem;
-        font-size: 15rem;
-    }
-    .your-score {
-        bottom: 230rem;
-    }
-    .computer-score {
-        bottom: 230rem;
+        right: -40rem;
+        top: 400rem;
     }
 }
