@@ -41,10 +41,11 @@ body {
     top: 55rem;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
-.text.info {
-    font-size: 30rem;
+#info {
+    font-size: 20rem;
     top: 170rem;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -75,11 +76,11 @@ body {
 }
 
 .credits {
-    font-size: 30rem;
+    font-size: 25rem;
     color: #fff9e4;
     line-height: 35rem;
     text-align: center;
-    margin-top: 0rem;
+    margin-top: -30rem;
 }
 
 ul {
@@ -106,7 +107,7 @@ li:hover {
     height: 230rem;
     position: fixed;
     left: 450rem;
-    top: 340px; 
+    top: 300rem; 
 }
 
 .attack-pose {
@@ -114,10 +115,10 @@ li:hover {
 }
 
 .robot img {
-    height: 310rem;
+    height: 210rem;
     position: fixed;
     left: 750rem;
-    top: 330px;
+    top: 300rem;
 }
 
 .left-buttons {
@@ -142,7 +143,7 @@ li:hover {
 .paper img,
 .scissors img {
     opacity: 80%;
-    height: 80rem;
+    height: 60rem;
 }
 
 .left-buttons img:hover {
@@ -169,299 +170,3 @@ li:hover {
 }
 
 /* Adaptive Design section */
-
-@media (min-width: 1300px) and (max-width: 1389px) {
-    html {
-        font-size: 5.25%;
-    }
-    .boy img {
-        height: 260rem;
-        position: fixed;
-        left: 530rem;
-        top: 415rem; 
-    }
-    
-    .robot img {
-        height: 330rem;
-        position: fixed;
-        left: 900rem;
-        top: 405rem;
-    }
-}
-
-@media (min-width: 1190px) and (max-width: 1300px) {
-    html {
-        font-size: 4.90%;
-    }
-    .boy img {
-        height: 270rem;
-        position: fixed;
-        left: 530rem;
-        top: 430rem; 
-    }
-    
-    .robot img {
-        height: 350rem;
-        position: fixed;
-        left: 900rem;
-        top: 430rem;
-    }   
-    .left-buttons {
-        left: 230rem;
-        top: 140rem;
-    }
-    
-    .right-buttons {
-        right: 230rem;
-        top: 140rem;
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1190px) {
-    html {
-        font-size: 4.25%;
-    }
-    .boy img {
-        height: 300rem;
-        position: fixed;
-        left: 530rem;
-        top: 505rem; 
-    }
-    
-    .robot img {
-        height: 380rem;
-        position: fixed;
-        left: 900rem;
-        top: 500rem;
-    }   
-    .left-buttons {
-        left: 230rem;
-        top: 240rem;
-    }
-    
-    .right-buttons {
-        right: 230rem;
-        top: 240rem;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1000px) {
-    html {
-        font-size: 3.50%;
-    }
-    .boy img {
-        height: 380rem;
-        position: fixed;
-        left: 510rem;
-        top: 600rem; 
-    }
-    .robot img {
-        height: 450rem;
-        position: fixed;
-        left: 800rem;
-        top: 620rem;
-    }   
-    .left-buttons {
-        left: 200rem;
-        top: 440rem;
-    }
-    
-    .right-buttons {
-        right: 200rem;
-        top: 440rem;
-    }
-    .rock img,
-.paper img,
-.scissors img {
-    opacity: 80%;
-    height: 100rem;
-}
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
-    html {
-        font-size: 2.60%;
-    }
-    .boy img {
-        height: 480rem;
-        position: fixed;
-        left: 420rem;
-        top: 830rem; 
-    }
-    .robot img {
-        height: 560rem;
-        position: fixed;
-        left: 810rem;
-        top: 860rem;
-    }   
-    .left-buttons {
-        left: 180rem;
-        top: 440rem;
-    }
-    
-    .right-buttons {
-        right: 30rem;
-        top: 440rem;
-    }   
-    .rock img,
-    .paper img,
-    .scissors img {
-        opacity: 80%;
-        height: 150rem;
-        
-}
-    .header {
-        width: 1200rem;
-        text-align: center;
-    }
-    #result {
-        font-size: 60rem;
-    }
-    .banner {
-        width: 700rem;
-        height: 0rem;
-        text-align: center;
-        white-space: nowrap;
-    }
-    #info {
-        font-size: 30rem;
-    }
-}
-
-@media (max-height: 520px) {
-    .footer {
-        opacity: 0%;
-    }
-}
-
-@media (width: 1920px) and (height: 1080px) {
-    html {
-        font-size: 8.25%;
-    }
-    .boy img {
-        height: 290rem;
-        position: fixed;
-        left: 420rem;
-        top: 430rem; 
-    }
-    .robot img {
-        height: 360rem;
-        position: fixed;
-        left: 810rem;
-        top: 430rem;
-    }   
-    .left-buttons {
-        left: 180rem;
-        top: 170rem;
-    }
-    
-    .right-buttons {
-        right: 30rem;
-        top: 170rem;
-    }  
-}
-
-@media (width: 1024px) and (height: 768px) {
-    html {
-        font-size: 4.25%;
-    }
-    .boy img {
-        height: 310rem;
-        position: fixed;
-        left: 420rem;
-        top: 650rem; 
-    }
-    .robot img {
-        height: 360rem;
-        position: fixed;
-        left: 810rem;
-        top: 690rem;
-    }   
-    .left-buttons {
-        left: 180rem;
-        top: 400rem;
-    }
-    
-    .right-buttons {
-        right: 30rem;
-        top: 400rem;
-    }  
-}
-@media (width: 1366px) and (height: 768px) {
-    html {
-        font-size: 5.25%;
-    }
-    .boy img {
-        height: 310rem;
-        position: fixed;
-        left: 480rem;
-        top: 480rem; 
-    }
-    .robot img {
-        height: 360rem;
-        position: fixed;
-        left: 850rem;
-        top: 500rem;
-    }   
-    .left-buttons {
-        left: 190rem;
-        top: 250rem;
-    }
-    
-    .right-buttons {
-        right: 40rem;
-        top: 250rem;
-    }  
-}
-@media (width: 1440px) and (height: 768px) {
-    html {
-        font-size: 5.50%;
-    }
-    .boy img {
-        height: 310rem;
-        position: fixed;
-        left: 500rem;
-        top: 450rem; 
-    }
-    .robot img {
-        height: 360rem;
-        position: fixed;
-        left: 900rem;
-        top: 470rem;
-    }   
-    .left-buttons {
-        left: 190rem;
-        top: 250rem;
-    }
-    
-    .right-buttons {
-        right: 40rem;
-        top: 250rem;
-    }  
-}
-@media (width: 768px) and (height: 768px) {
-    html {
-        font-size: 4.00%;
-    }
-    .boy img {
-        height: 310rem;
-        position: fixed;
-        left: 240rem;
-        top: 715rem; 
-    }
-    .robot img {
-        height: 360rem;
-        position: fixed;
-        left: 750rem;
-        top: 720rem;
-    }   
-    .left-buttons {
-        left: 0rem;
-        top: 250rem;
-    }
-    
-    .right-buttons {
-        right: 0rem;
-        top: 250rem;
-    }  
-}
