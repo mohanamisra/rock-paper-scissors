@@ -293,7 +293,7 @@ li:hover {
         height: 200rem;
         position: fixed;
         left: 270rem;
-        top: 600rem;
+        top: 520rem;
     }
     .left-buttons {
         left: -40rem;
@@ -351,6 +351,63 @@ li:hover {
         position: fixed;
         left: 270rem;
         top: 400rem;
+    }
+    .left-buttons {
+        left: -40rem;
+        top: 300rem;
+    }
+    
+    .right-buttons {
+        right: -40rem;
+        top: 300rem;
+    }   
+}
+
+@media (max-width: 360px) and (min-height: 630px) {
+    html {
+        font-size: 4.25%;
+    }
+    .header img {
+        position: fixed;
+        top: 290rem;
+        height: 40rem;
+        width: 500rem;
+    }
+    
+    .banner img {
+        position: fixed;
+        top: 350rem;
+        height: 40rem;
+        width: 350rem;
+    }
+    #result {
+        top: 290rem;
+    }
+    #info {
+        top: 350rem;
+        font-size: 10rem;
+    }
+    .your-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 20rem;
+    } 
+    .computer-score {
+        bottom: 250rem;
+        font-size: 15rem;
+        left: 330rem;
+    }
+    .boy img {
+        height: 170rem;
+        position: fixed;
+        left: 60rem;
+        top: 520rem; 
+    }
+    .robot img {
+        height: 200rem;
+        position: fixed;
+        left: 270rem;
+        top: 470rem;
     }
     .left-buttons {
         left: -40rem;
