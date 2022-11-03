@@ -6,6 +6,7 @@ let computerScore = 0;
 let choiceDisplay = document.getElementById("choice-display");
 let resultDisplay = document.getElementById("result-display");
 let finalResult = document.getElementById("final-display");
+let playAgain = document.getElementById("play-again");
 
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
@@ -32,6 +33,7 @@ function reset(winner){
     else{
         finalResult.innerText = winner + " WON!";
     }
+    playAgain.innerText = "Play Again?";
     playerScore = 0;
     computerScore = 0;
 }
