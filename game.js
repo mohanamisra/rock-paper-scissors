@@ -5,6 +5,7 @@ let computerScore = 0;
 
 let choiceDisplay = document.getElementById("choice-display");
 let resultDisplay = document.getElementById("result-display");
+let finalResult = document.getElementById("final-display");
 
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
@@ -23,10 +24,17 @@ let scissors = buttons[2].addEventListener('click', () => {
     game(playerSelection, computerSelection);
 });
 
-let resetButton = buttons[3].addEventListener('click', () => {
+let resetButton = buttons[3].addEventListener('click', reset)
+
+function reset(winner){
+    if(winner == 0)
+        finalResult.innerText = "IT IS A DRAW!";
+    else{
+        finalResult.innerText = winner + " WON!";
+    }
     playerScore = 0;
     computerScore = 0;
-})
+}
 
 
 function getComputerChoice(){
@@ -64,6 +72,7 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(playerSelection, computerSelection){
+    let winner = "";
 
     playRound(playerSelection, computerSelection);
     choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
@@ -77,6 +86,20 @@ function game(playerSelection, computerSelection){
 
     resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
 
+    if(playerScore == 5 || computerScore == 5){
+        if(playerScore > computerScore){
+            winner = "PLAYER";
+            reset(winner);
+        }
+        else if(playerScore < computerScore){
+            winner = "COMPUTER";
+            reset(winner);
+        }
+        else if(playerScore == computerScore){
+            winner = 0;
+            reset(winner);
+        }
+    }
     // if(playerScore > computerScore)
     //     console.log("Player wins!");
     // else if(playerScore < computerScore)
