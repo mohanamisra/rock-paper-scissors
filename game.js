@@ -3,6 +3,9 @@ let computerSelection = "";
 let playerScore = 0;
 let computerScore = 0;
 
+let choiceDisplay = document.getElementById("choice-display");
+let resultDisplay = document.getElementById("result-display");
+
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
     playerSelection = "rock";
@@ -63,8 +66,7 @@ function playRound(playerSelection, computerSelection){
 function game(playerSelection, computerSelection){
 
     playRound(playerSelection, computerSelection);
-    console.log("You chose: " + playerSelection);
-    console.log("Computer chose: " + computerSelection);
+    choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
 
     let result = playRound(playerSelection, computerSelection);
 
@@ -73,8 +75,7 @@ function game(playerSelection, computerSelection){
     else if(result == "computer wins")
         computerScore++;
 
-    console.log("Your score: " + playerScore);
-    console.log("Computer's score: " + computerScore);
+    resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
 
     // if(playerScore > computerScore)
     //     console.log("Player wins!");
