@@ -6,7 +6,8 @@ let computerScore = 0;
 let choiceDisplay = document.getElementById("choice-display");
 let resultDisplay = document.getElementById("result-display");
 let finalResult = document.getElementById("final-display");
-let playAgain = document.getElementById("play-again");
+let displayContainer = document.getElementsByClassName("displays")[0];
+let dummyDiv = document.getElementById("dummy-div");
 
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
@@ -25,19 +26,27 @@ let scissors = buttons[2].addEventListener('click', () => {
     game(playerSelection, computerSelection);
 });
 
-let resetButton = buttons[3].addEventListener('click', reset)
-
-function reset(winner){
+function displayResults(winner){
     if(winner == 0)
         finalResult.innerText = "IT IS A DRAW!";
     else{
         finalResult.innerText = winner + " WON!";
     }
-    playAgain.innerText = "Play Again?";
-    playerScore = 0;
-    computerScore = 0;
-}
+    let resetButton = document.createElement('button');
+    resetButton.id = "play-again";
+    resetButton.innerText = "Play Again?";
+    displayContainer.insertBefore(resetButton, dummyDiv);
 
+    resetButton.addEventListener('click', reset);
+
+    function reset(){
+        playerScore = 0;
+        computerScore = 0;
+        choiceDisplay.innerText = "Choices, choices... so many choices";
+        resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
+        resetButton.style.display = "none";
+    }
+}
 
 function getComputerChoice(){
     let max = 3;
@@ -91,15 +100,15 @@ function game(playerSelection, computerSelection){
     if(playerScore == 5 || computerScore == 5){
         if(playerScore > computerScore){
             winner = "PLAYER";
-            reset(winner);
+            displayResults(winner);
         }
         else if(playerScore < computerScore){
             winner = "COMPUTER";
-            reset(winner);
+            displayResults(winner);
         }
         else if(playerScore == computerScore){
             winner = 0;
-            reset(winner);
+            displayResults(winner);
         }
     }
     // if(playerScore > computerScore)
