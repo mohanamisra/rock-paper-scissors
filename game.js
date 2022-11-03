@@ -25,15 +25,41 @@ function playRound(playerSelection, computerSelection){
     let C = computerSelection;
 
     if(P === C)
-        console.log("It's a draw!");
+        return "draw";
     else if(P == "rock" && C == "scissors" || P == "paper" && C == "rock" || P == "scissors" && C == "paper")
-        console.log("Player wins!");
+        return "player wins";
     else
-        console.log("Computer wins!");
+        return "computer wins";
 }
 
-let playerSelection = prompt("What do you choose?");
-let computerSelection = getComputerChoice();
-console.log("You chose: " + playerSelection);
-console.log("Computer chose: " + computerSelection);
-playRound(playerSelection, computerSelection);
+function game(){
+
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for(let i = 1; i <= 5; i++){
+        let playerSelection = prompt("What do you choose?");
+        let computerSelection = getComputerChoice();
+
+        console.log("You chose: " + playerSelection);
+        console.log("Computer chose: " + computerSelection);
+
+        let result = playRound(playerSelection, computerSelection);
+        if(result == "player wins")
+            playerScore++;
+        else if(result == "computer wins")
+            computerScore++;
+
+        console.log("Your score: " + playerScore);
+        console.log("Computer's score: " + computerScore);
+    }
+
+    if(playerScore > computerScore)
+        console.log("Player wins!");
+    else if(playerScore < computerScore)
+        console.log("Computer wins!");
+    else
+        console.log("It's a draw!");
+}
+
+game();
