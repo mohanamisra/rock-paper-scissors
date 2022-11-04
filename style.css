@@ -4,3 +4,15 @@
     min-height: 100vh;
     min-width: 100vw;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.choiceButtonImage{
+    width: 7rem;
+}
