@@ -3,11 +3,11 @@ let computerSelection = "";
 let playerScore = 0;
 let computerScore = 0;
 
-let choiceDisplay = document.getElementById("choice-display");
-let resultDisplay = document.getElementById("result-display");
-let finalResult = document.getElementById("final-display");
+// let choiceDisplay = document.getElementById("choice-display");
+// let resultDisplay = document.getElementById("result-display");
+// let finalResult = document.getElementById("final-display");
 let displayContainer = document.getElementsByClassName("displays")[0];
-let dummyDiv = document.getElementById("dummy-div");
+let computerChoiceDisplay = document.getElementsByClassName("computerChoice")[0];
 
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
@@ -67,7 +67,21 @@ function getComputerChoice(){
             choice = "scissors";
             break;
     }
+
+    displayComputerChoice(choice);
     return choice;
+}
+
+function displayComputerChoice(choice){
+    if(choice === "rock"){
+        computerChoiceDisplay.innerHTML = '<img src="images/rockButton.png" width = 150rem" />';
+    }
+    else if(choice === "paper"){
+        computerChoiceDisplay.innerHTML = '<img src="images/paperButton.png" width = 150rem" />';
+    }
+    else if(choice === "scissors"){
+        computerChoiceDisplay.innerHTML = '<img src="images/scissorsButton.png" width = 150rem" />';
+    }
 }
 
 function playRound(playerSelection, computerSelection){
@@ -86,14 +100,19 @@ function game(playerSelection, computerSelection){
     let winner = "";
 
     playRound(playerSelection, computerSelection);
-    choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
+    // choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
 
     let result = playRound(playerSelection, computerSelection);
 
-    if(result == "player wins")
+    if(result == "player wins"){
         playerScore++;
-    else if(result == "computer wins")
+    }
+    else if(result == "computer wins"){
         computerScore++;
+    }
+    else if(result == "draw"){
+        
+    }
 
     resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
 

@@ -5,14 +5,42 @@
     min-width: 100vw;
 }
 
+.background{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.computerChoice {
+    /* border: 10px solid red; */
+    text-align: center;
+    flex: 1 1 0;
+    padding-top: 2rem;
+    /* min-height: 10rem; */
+}
+
+.displays {
+    flex: 1 1 0;
+    /* border: 10px solid red; */
+}
+
 .buttons {
+    padding-bottom: 2rem;
+    /* border: 10px solid red; */
+    flex: 1 1 0;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    height: 100vh;
     padding-bottom: 2rem;
 }
 
 .choiceButtonImage{
-    width: 10rem;
+    width: 9rem;
+    opacity: 75%;
+}
+
+.rockButton:hover, .paperButton:hover, .scissorsButton:hover{
+    opacity: 100%;
 }

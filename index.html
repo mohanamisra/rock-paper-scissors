@@ -13,13 +13,12 @@
     <!--This container is just for bootstrap to make the entire page responsive.
     Basically this is "RESPONSIVE BODY"-->
         <div class = "background">
-            <div class = "buttons">
-                <button class = "btn btn-primary-outline choiceButton"><img src="images/rockButton.png" alt="Rock Button" class="img-fluid choiceButtonImage"></button>
-                <button class = "btn btn-primary-outline choiceButton"><img src="images/paperButton.png" alt="Paper Button" class="img-fluid choiceButtonImage"></button>
-                <button class = "btn btn-primary-outline choiceButton"><img src="images/scissorsButton.png" alt="Scissors Button" class="img-fluid choiceButtonImage"></button>
+            <div class = "computerChoice">
             </div>
-            <div class = "displays d-none">
-                <div id = "choice-display">
+
+            <!-- Displays section starts -->
+            <div class = "displays">
+                <!-- <div id = "choice-display">
                     Choices, choices... so many choices
                 </div>
 
@@ -31,7 +30,16 @@
                     Final Score
                 </div>
                 <div id = "dummy-div">
-                </div>
+                </div> -->
+            </div>
+            <!-- Displays section ends -->
+
+            <!-- The player's choice buttons section-->
+            <div class = "buttons">
+                <button class = "btn btn-primary-outline choiceButton"><img src="images/rockButton.png" alt="Rock Button" class="img-fluid choiceButtonImage rockButton"></button>
+                <button class = "btn btn-primary-outline choiceButton"><img src="images/paperButton.png" alt="Paper Button" class="img-fluid choiceButtonImage paperButton"></button>
+                <button class = "btn btn-primary-outline choiceButton"><img src="images/scissorsButton.png" alt="Scissors Button" class="img-fluid choiceButtonImage scissorsButton"></button>
+            <!-- The player's choice buttons section ends -->
             </div>
         </div>
     </div>
