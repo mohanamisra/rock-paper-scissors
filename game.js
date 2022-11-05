@@ -6,7 +6,11 @@ let computerScore = 0;
 // let choiceDisplay = document.getElementById("choice-display");
 // let resultDisplay = document.getElementById("result-display");
 // let finalResult = document.getElementById("final-display");
-let displayContainer = document.getElementsByClassName("displays")[0];
+let playerScoreDisplay = document.getElementById("your-score");
+let roundResultDisplay = document.getElementById("round-result");
+let computerScoreDisplay = document.getElementById("computer-score");
+
+let playerButtons = document.getElementById("player-choices");
 let computerChoiceDisplay = document.getElementsByClassName("computerChoice")[0];
 
 let buttons = document.getElementsByTagName('button');
@@ -26,26 +30,8 @@ let scissors = buttons[2].addEventListener('click', () => {
     game(playerSelection, computerSelection);
 });
 
-function displayResults(winner){
-    if(winner == 0)
-        finalResult.innerText = "IT IS A DRAW!";
-    else{
-        finalResult.innerText = winner + " WON!";
-    }
-    let resetButton = document.createElement('button');
-    resetButton.id = "play-again";
-    resetButton.innerText = "Play Again?";
-    displayContainer.insertBefore(resetButton, dummyDiv);
-
-    resetButton.addEventListener('click', reset);
-
-    function reset(){
-        playerScore = 0;
-        computerScore = 0;
-        choiceDisplay.innerText = "Choices, choices... so many choices";
-        resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
-        resetButton.style.display = "none";
-    }
+function reset(){
+    playerButtons.innerHTML = "<a href = 'game.html' class = 'reset-link'>Again, arr?</a>"
 }
 
 function getComputerChoice(){
@@ -97,7 +83,6 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(playerSelection, computerSelection){
-    let winner = "";
 
     playRound(playerSelection, computerSelection);
     // choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
@@ -106,30 +91,30 @@ function game(playerSelection, computerSelection){
 
     if(result == "player wins"){
         playerScore++;
-        displayContainer.innerText = "You win this round!";
+        roundResultDisplay.innerText = "You win this round!";
+        playerScoreDisplay.innerText = "You: " + playerScore;
     }
     else if(result == "computer wins"){
         computerScore++;
-        displayContainer.innerText = "Ol' Bloody wins the round!";
+        roundResultDisplay.innerText = "Ol' Bloody wins the round!";
+        computerScoreDisplay.innerText = "Bloodfingers: " + computerScore;
     }
     else if(result == "draw"){
-        displayContainer.innerText = "Round ends in draw!";
+        roundResultDisplay.innerText = "Round ends in draw!";
     }
-
-    resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
 
     if(playerScore == 5 || computerScore == 5){
         if(playerScore > computerScore){
-            winner = "PLAYER";
-            displayResults(winner);
+            roundResultDisplay.innerText = "Ye win, ye brave hound!"
+            reset();
         }
         else if(playerScore < computerScore){
-            winner = "COMPUTER";
-            displayResults(winner);
+            roundResultDisplay.innerText = "You lose. Now scurry."
+            reset();
         }
         else if(playerScore == computerScore){
-            winner = 0;
-            displayResults(winner);
+            roundResultDisplay.innerText = "Shiver me timbers! A draw?"
+            reset();
         }
     }
     // if(playerScore > computerScore)
