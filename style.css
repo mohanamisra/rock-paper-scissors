@@ -82,3 +82,52 @@ footer{
     text-align: center;
     padding: 1rem;
 }
+
+.displays.instructions{
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0 4rem 0;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    opacity: 75%;
+}
+
+a:hover{
+    color: white;
+    opacity: 100%;
+    font-size: 3.25rem;
+}
+
+.main-skull {
+    height: 16rem;
+}
+
+.background.instructions{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    
+}
+
+.page-title{
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.subtext{
+    font-size: 2rem;
+    font-weight: 700;
+}
