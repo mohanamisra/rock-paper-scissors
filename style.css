@@ -15,7 +15,7 @@
 }
 
 .computerChoice {
-    /* border: 10px solid red; */
+    border: 10px solid red;
     text-align: center;
     flex: 1 1 0;
     padding-top: 2rem;
@@ -24,12 +24,12 @@
 
 .displays {
     flex: 1 1 0;
-    /* border: 10px solid red; */
+    border: 10px solid red;
 }
 
 .buttons {
     padding-bottom: 2rem;
-    /* border: 10px solid red; */
+    border: 10px solid red;
     flex: 1 1 0;
     display: flex;
     justify-content: space-around;

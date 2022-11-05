@@ -106,12 +106,14 @@ function game(playerSelection, computerSelection){
 
     if(result == "player wins"){
         playerScore++;
+        displayContainer.innerText = "You win this round!";
     }
     else if(result == "computer wins"){
         computerScore++;
+        displayContainer.innerText = "Computer wins this round!";
     }
     else if(result == "draw"){
-        
+        displayContainer.innerText = "Round ends in draw!";
     }
 
     resultDisplay.innerText = "Your score: " + playerScore + ", while Computer's score: " + computerScore;
