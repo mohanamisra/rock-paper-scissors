@@ -3,6 +3,8 @@
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
+    font-family: 'Caudex', 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .background{
@@ -24,6 +26,8 @@
 
 .displays {
     flex: 1 1 0;
+    text-align: center;
+    font-size: 2rem;
     border: 10px solid red;
 }
 
