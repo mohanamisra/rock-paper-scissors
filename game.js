@@ -110,7 +110,7 @@ function game(playerSelection, computerSelection){
     }
     else if(result == "computer wins"){
         computerScore++;
-        displayContainer.innerText = "Computer wins this round!";
+        displayContainer.innerText = "Ol' Bloody wins the round!";
     }
     else if(result == "draw"){
         displayContainer.innerText = "Round ends in draw!";
