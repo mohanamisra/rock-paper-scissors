@@ -131,3 +131,11 @@ a:hover{
     font-size: 2rem;
     font-weight: 700;
 }
+
+.or-option{
+    font-size: 2rem;
+}
+
+a.or-option:hover{
+    font-size: 2.25rem;
+}
