@@ -1,3 +1,39 @@
+let playerSelection = "";
+let computerSelection = "";
+let playerScore = 0;
+let computerScore = 0;
+
+// let choiceDisplay = document.getElementById("choice-display");
+// let resultDisplay = document.getElementById("result-display");
+// let finalResult = document.getElementById("final-display");
+let playerScoreDisplay = document.getElementById("your-score");
+let roundResultDisplay = document.getElementById("round-result");
+let computerScoreDisplay = document.getElementById("computer-score");
+
+let playerButtons = document.getElementById("player-choices");
+let computerChoiceDisplay = document.getElementsByClassName("computerChoice")[0];
+
+let buttons = document.getElementsByTagName('button');
+let rock = buttons[0].addEventListener('click', () => {
+    playerSelection = "rock";
+    computerSelection = getComputerChoice();
+    game(playerSelection, computerSelection);
+});
+let paper = buttons[1].addEventListener('click', () => {
+    playerSelection = "paper";
+    computerSelection = getComputerChoice();
+    game(playerSelection, computerSelection);
+});
+let scissors = buttons[2].addEventListener('click', () => {
+    playerSelection = "scissors";
+    computerSelection = getComputerChoice();
+    game(playerSelection, computerSelection);
+});
+
+function reset(){
+    playerButtons.innerHTML = "<a href = 'game.html' class = 'reset-link'>Again, arr?</a>"
+}
+
 function getComputerChoice(){
     let max = 3;
     let min = 1;
@@ -17,11 +53,25 @@ function getComputerChoice(){
             choice = "scissors";
             break;
     }
+
+    displayComputerChoice(choice);
     return choice;
 }
 
+function displayComputerChoice(choice){
+    if(choice === "rock"){
+        computerChoiceDisplay.innerHTML = '<img src="images/rockButton.png" width = 150rem" />';
+    }
+    else if(choice === "paper"){
+        computerChoiceDisplay.innerHTML = '<img src="images/paperButton.png" width = 150rem" />';
+    }
+    else if(choice === "scissors"){
+        computerChoiceDisplay.innerHTML = '<img src="images/scissorsButton.png" width = 150rem" />';
+    }
+}
+
 function playRound(playerSelection, computerSelection){
-    let P = playerSelection.toLowerCase();
+    let P = playerSelection;
     let C = computerSelection;
 
     if(P === C)
@@ -32,34 +82,47 @@ function playRound(playerSelection, computerSelection){
         return "computer wins";
 }
 
-function game(){
+function game(playerSelection, computerSelection){
 
-    let playerScore = 0;
-    let computerScore = 0;
+    playRound(playerSelection, computerSelection);
+    // choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
 
-    for(let i = 1; i <= 5; i++){
-        let playerSelection = prompt("What do you choose?");
-        let computerSelection = getComputerChoice();
+    let result = playRound(playerSelection, computerSelection);
 
-        console.log("You chose: " + playerSelection);
-        console.log("Computer chose: " + computerSelection);
-
-        let result = playRound(playerSelection, computerSelection);
-        if(result == "player wins")
-            playerScore++;
-        else if(result == "computer wins")
-            computerScore++;
-
-        console.log("Your score: " + playerScore);
-        console.log("Computer's score: " + computerScore);
+    if(result == "player wins"){
+        playerScore++;
+        roundResultDisplay.innerText = "You win this round!";
+        playerScoreDisplay.innerText = "You: " + playerScore;
+    }
+    else if(result == "computer wins"){
+        computerScore++;
+        roundResultDisplay.innerText = "Ol' Bloody wins the round!";
+        computerScoreDisplay.innerText = "Bloodfingers: " + computerScore;
+    }
+    else if(result == "draw"){
+        roundResultDisplay.innerText = "Round ends in draw!";
     }
 
-    if(playerScore > computerScore)
-        console.log("Player wins!");
-    else if(playerScore < computerScore)
-        console.log("Computer wins!");
-    else
-        console.log("It's a draw!");
+    if(playerScore == 5 || computerScore == 5){
+        if(playerScore > computerScore){
+            roundResultDisplay.innerText = "Ye win, ye brave hound!"
+            reset();
+        }
+        else if(playerScore < computerScore){
+            roundResultDisplay.innerText = "You lose. Now scurry."
+            reset();
+        }
+        else if(playerScore == computerScore){
+            roundResultDisplay.innerText = "Shiver me timbers! A draw?"
+            reset();
+        }
+    }
+    // if(playerScore > computerScore)
+    //     console.log("Player wins!");
+    // else if(playerScore < computerScore)
+    //     console.log("Computer wins!");
+    // else
+    //     console.log("It's a draw!");
 }
 
-game();
+// game();

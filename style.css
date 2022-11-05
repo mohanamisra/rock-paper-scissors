@@ -1,0 +1,169 @@
+html{
+    overflow: hidden;
+}
+
+.container {
+    background-image: url("images/background.png");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Caudex', 'Times New Roman', Times, serif;
+    color: white;
+    scrollbar-width: none;
+}
+
+.background{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 7rem;
+}
+
+.computerChoice {
+    /* border: 10px solid red; */
+    text-align: center;
+    flex: 1 1 0;
+    padding-top: 2rem;
+    /* min-height: 10rem; */
+}
+
+.displays {
+    padding: 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0;
+    text-align: center;
+    font-size: 3rem;
+    /* border: 10px solid red; */
+}
+
+.buttons {
+    padding-bottom: 2rem;
+    /* border: 10px solid red; */
+    flex: 1 1 0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.choiceButtonImage{
+    width: 9rem;
+    opacity: 75%;
+}
+
+.rockButton:hover, .paperButton:hover, .scissorsButton:hover{
+    opacity: 100%;
+}
+
+.skulls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skull-image{
+    width: 12rem;
+    opacity: 80%;
+}
+
+.skull-one{
+    transform: rotate(-45deg);
+}
+
+.skull-two{
+    transform: rotate(45deg);
+}
+
+.btn:focus, .btn:active{
+    box-shadow: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.displays.instructions{
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0 4rem 0;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    opacity: 75%;
+}
+
+a:hover{
+    color: white;
+    opacity: 100%;
+    font-size: 3.25rem;
+}
+
+.main-skull {
+    height: 16rem;
+}
+
+.background.instructions{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    
+}
+
+.page-title{
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.subtext{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.or-option{
+    font-size: 2rem;
+}
+
+a.or-option:hover{
+    font-size: 2.25rem;
+}
+
+.reset-link{
+    font-size: 3rem;
+}
+
+.caption{
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.footer-link{
+    opacity: 100%;
+}
+
+a.footer-link:hover{
+    font-size: 1rem;
+    text-decoration: underline;
+}
