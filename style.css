@@ -146,3 +146,24 @@ a.or-option:hover{
 .reset-link{
     font-size: 3rem;
 }
+
+.caption{
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.footer-link{
+    opacity: 100%;
+}
+
+a.footer-link:hover{
+    font-size: 1rem;
+    text-decoration: underline;
+}
