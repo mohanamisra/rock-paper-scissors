@@ -1,4 +1,58 @@
+/* Media queries start */
+@media(max-width: 768px) {
+    html, body{
+        min-height: 2000px;
+        min-width: 768px;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    footer{
+        max-width: 992px;
+    }
+
+    .container {
+        background-image: url("images/background.png");
+        height: 100%;
+        width: 100%;
+        font-family: 'Caudex', 'Times New Roman', Times, serif;
+        color: white;
+        scrollbar-width: none;
+    }
+    #player-choices{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .displays.game{
+        margin-top: -8rem;
+    }
+}
+
 @media(max-width: 992px) {
+    html, body{
+        min-height: 2000px;
+        min-width: 768px;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    footer{
+        max-width: 992px;
+    }
+
+    .container {
+        background-image: url("images/background.png");
+        height: 100%;
+        width: 100%;
+        font-family: 'Caudex', 'Times New Roman', Times, serif;
+        color: white;
+        scrollbar-width: none;
+    }
+
     .page-title.responsive-page-title{
         font-size: 3rem;
     }
@@ -8,6 +62,7 @@
     }
 
     .displays.instructions.home-page{
+        margin-top: -3rem;
         font-size: 1.75rem;
         gap: 0rem;
     }
@@ -31,6 +86,7 @@
         gap: 0rem;
         font-size: 2rem;
     }
+
     .choiceButtonImage{
         max-width: 6rem;
     }
@@ -64,6 +120,35 @@
         font-size: 2rem;
     }
 }
+
+@media(max-width: 1200px) and (min-width: 992px){
+    .displays.instructions.home-page{
+        margin-top: -3rem;
+        font-size: 1.75rem;
+        gap: 0rem;
+    }
+
+
+    .displays.instructions.instructions-page{
+        font-size: 2rem;
+        gap: 0rem;
+        margin-top: -2rem;
+    }
+    
+    .game-instructions{
+        font-size: 1.8rem;
+    }
+
+    .understand-instructions-button:hover{
+        font-size: 2rem;
+    }
+
+    #player-choices{
+        margin-top: -5rem;
+    }
+}
+
+/* Media queries end */
 
 html{
     overflow: hidden;
@@ -122,6 +207,10 @@ html{
 
 .rockButton:hover, .paperButton:hover, .scissorsButton:hover{
     opacity: 100%;
+}
+
+#player-choices{
+    margin-top: -2rem;
 }
 
 .skulls{
@@ -239,6 +328,11 @@ footer.game-footer{
     justify-content: space-between;
 }
 
+.second-row{
+    display: flex;
+    justify-content: space-between;
+}
+
 footer.no-option{
     display: flex;
     justify-content: center;
@@ -256,4 +350,16 @@ a.footer-link:hover{
 .attribute-display{
     display: flex;
     justify-content: center;
+}
+
+#audio-button{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    max-height: 5rem;
+}
+
+.left-home-page{
+    display: flex;
+    flex-direction: column;
 }
