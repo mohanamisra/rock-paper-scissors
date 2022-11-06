@@ -13,12 +13,14 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <audio autoplay src = "musicandsounds/backgroundmusic.mp3" id = "audio">
+  </audio>
     <div class="container p-0 m-0">
     <!--This container is just for bootstrap to make the entire page responsive.
     Basically this is "RESPONSIVE BODY"-->
         <div class = "background instructions">
             <div class = "skulls ">
-                <img src = "images/skull.png" alt = "Skull and Bones image" class = "skull-image skull-one">
+                <img src = "images/skull.png" alt = "Skull and Bones image" class = "skull-image skull-one" id = "firstskull">
                 <div class = "computerChoice">
                     <span class = "page-title">Rock, Paper, Scissors</span><br>
                     <span class = "subtext">(Pirate Edition)</span>
@@ -50,6 +52,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src = "audioplay.js"></script>
     <!-- Scripts end -->
 </body>
 </html>

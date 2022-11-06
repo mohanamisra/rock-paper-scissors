@@ -156,7 +156,24 @@ a.or-option:hover{
 
 footer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+footer.game-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.no-option{
+    display: flex;
+    justify-content: center;
 }
 
 a.footer-link{
@@ -166,4 +183,9 @@ a.footer-link{
 a.footer-link:hover{
     font-size: 1rem;
     text-decoration: underline;
+}
+
+.attribute-display{
+    display: flex;
+    justify-content: center;
 }
