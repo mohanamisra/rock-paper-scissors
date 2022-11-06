@@ -333,6 +333,10 @@ footer.game-footer{
     justify-content: space-between;
 }
 
+.dummy-div{
+    min-width: 10rem;
+}
+
 footer.no-option{
     display: flex;
     justify-content: center;
@@ -362,4 +366,8 @@ a.footer-link:hover{
 .left-home-page{
     display: flex;
     flex-direction: column;
+}
+
+.rps-instructions{
+    margin-top: -3rem;
 }

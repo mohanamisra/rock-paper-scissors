@@ -13,7 +13,7 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <audio autoplay src = "musicandsounds/backgroundmusic.mp3" id = "audio">
+    <audio src = "musicandsounds/backgroundmusic.mp3" id = "audio">
     </audio>
     <div class="container p-0 m-0">
     <!--This container is just for bootstrap to make the entire page responsive.
@@ -32,7 +32,7 @@
 
             <!-- Displays section starts -->
             <div class = "displays instructions instructions-page">
-                <div class = "game-instructions">
+                <div class = "rps-instructions">
                In a classic game of rock, paper and scissors:-<br>
                Rock beats scissors<br>
                Scissors beats paper<br>
@@ -47,9 +47,18 @@
         </div>
     </div>
 
-    <footer class = "fixed-bottom">
-        <div class = "game-instructions"><a href = "index.html" class = "footer-link">Home Page</a></div>
-        <div class = "author-name">&#169; Made by Mohana Misra (2022)</div><div class = "attributes"><a href = "attributes.html" class = "footer-link">Attributes</a></div>
+    <footer class = "fixed-bottom game-footer">
+        <div class = "first-row">
+            <div class = "home-page"><a href = "index.html" class = "footer-link">Home Page</a></div>
+            <div class = "home-page d-none"><a href = "index.html" class = "footer-link">Home Page</a></div>
+            <div class = "attributes"><a href = "attributes.html" class = "footer-link">Attributes</a></div>
+        </div>
+        <div class = "second-row">
+            <div class = "dummy-div"></div>
+            <div class = "author-name">&#169; Made by Mohana Misra (2022)</div>
+            <div>
+                <button class = "btn" id = "audio-button">Play Audio</button></div>
+            </div>
     </footer>
 
     <!-- Scripts -->
