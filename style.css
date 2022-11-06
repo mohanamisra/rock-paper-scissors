@@ -1,3 +1,70 @@
+@media(max-width: 992px) {
+    .page-title.responsive-page-title{
+        font-size: 3rem;
+    }
+
+    .skull-image{
+        max-height: 10rem;
+    }
+
+    .displays.instructions.home-page{
+        font-size: 1.75rem;
+        gap: 0rem;
+    }
+
+    .crossed-swords{
+        max-height: 10rem;
+    }
+    .subtext.responsive-subtext{
+        font-size: 1.2rem;
+    }
+
+    .displays.instructions{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 7rem;
+    }
+    .displays.game{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0rem;
+        font-size: 2rem;
+    }
+    .choiceButtonImage{
+        max-width: 6rem;
+    }
+    .caption{
+        display: none;
+    }
+
+    .displays.instructions.instructions-page{
+        font-size: 1.5rem;
+        gap: 0rem;
+        margin-top: -2rem;
+    }
+    
+    .understand-instructions-button:hover{
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width: 1400px) and (min-width: 832px){
+    .displays.instructions.instructions-page{
+        font-size: 2rem;
+        gap: 0rem;
+        margin-top: -2rem;
+    }
+    
+    .game-instructions{
+        font-size: 1.8rem;
+    }
+
+    .understand-instructions-button:hover{
+        font-size: 2rem;
+    }
+}
+
 html{
     overflow: hidden;
 }
@@ -63,6 +130,7 @@ html{
 }
 
 .skull-image{
+    max-height: 11rem;
     width: 12rem;
     opacity: 80%;
 }
@@ -111,7 +179,7 @@ a:hover{
     font-size: 3.25rem;
 }
 
-.main-skull {
+.crossed-swords {
     height: 16rem;
 }
 
