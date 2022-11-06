@@ -1,11 +1,10 @@
+// variables required for game-play
 let playerSelection = "";
 let computerSelection = "";
 let playerScore = 0;
 let computerScore = 0;
 
-// let choiceDisplay = document.getElementById("choice-display");
-// let resultDisplay = document.getElementById("result-display");
-// let finalResult = document.getElementById("final-display");
+// variables required for UI functioning
 let playerScoreDisplay = document.getElementById("your-score");
 let roundResultDisplay = document.getElementById("round-result");
 let computerScoreDisplay = document.getElementById("computer-score");
@@ -13,6 +12,7 @@ let computerScoreDisplay = document.getElementById("computer-score");
 let playerButtons = document.getElementById("player-choices");
 let computerChoiceDisplay = document.getElementsByClassName("computerChoice")[0];
 
+//Game starts with click of a button
 let buttons = document.getElementsByTagName('button');
 let rock = buttons[0].addEventListener('click', () => {
     playerSelection = "rock";
@@ -85,7 +85,6 @@ function playRound(playerSelection, computerSelection){
 function game(playerSelection, computerSelection){
 
     playRound(playerSelection, computerSelection);
-    // choiceDisplay.innerText = "You chose: " + playerSelection + ", while computer chose: " + computerSelection;
 
     let result = playRound(playerSelection, computerSelection);
 
@@ -117,12 +116,4 @@ function game(playerSelection, computerSelection){
             reset();
         }
     }
-    // if(playerScore > computerScore)
-    //     console.log("Player wins!");
-    // else if(playerScore < computerScore)
-    //     console.log("Computer wins!");
-    // else
-    //     console.log("It's a draw!");
 }
-
-// game();
